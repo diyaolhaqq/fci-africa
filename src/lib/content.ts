@@ -35,6 +35,13 @@ type PartnerGroup = {
   names: string[];
 };
 
+type PartnerProgram = {
+  title: string;
+  icon: IconName;
+  body: string;
+  outputs: string[];
+};
+
 export const navItems = [
   { label: "About", href: "/about" },
   { label: "Grant Programs", href: "/grant-programs" },
@@ -323,6 +330,120 @@ export const partnerGroups: PartnerGroup[] = [
     icon: "spark",
     names: ["technology foundations", "frontier labs", "philanthropic funders", "corporate research programs"],
   },
+];
+
+export const partnerMissionVision = [
+  {
+    label: "Partner mission",
+    title: "Build the institutional layer behind African frontier research.",
+    body:
+      "FCI Africa partners with serious institutions to turn compute, data, mentorship, field access, and scientific review into usable infrastructure for researchers building in Africa.",
+  },
+  {
+    label: "Partner vision",
+    title: "A continent-scale research network with trusted data and frontier tools.",
+    body:
+      "The long-term vision is a durable African scientific stack: trusted datasets, evaluation labs, robotics testbeds, compute credits, open research outputs, and university-linked pathways for frontier AI and physical AI.",
+  },
+];
+
+export const partnerPrograms: PartnerProgram[] = [
+  {
+    title: "Compute Access Coalition",
+    icon: "cpu",
+    body:
+      "Cloud providers, GPU sponsors, and AI labs contribute credits, model access, infrastructure support, and technical review for high-potential research teams.",
+    outputs: ["GPU credits", "LLM access", "cloud architecture review"],
+  },
+  {
+    title: "University Research Nodes",
+    icon: "building",
+    body:
+      "Universities host local program nodes that identify strong applicants, support review, supervise research practice, and help projects reach public outputs.",
+    outputs: ["faculty review", "student cohorts", "lab coordination"],
+  },
+  {
+    title: "Trusted Dataset Labs",
+    icon: "database",
+    body:
+      "Partner labs help collect, document, annotate, validate, and steward datasets that are robust enough for African AI, science, robotics, and field systems.",
+    outputs: ["dataset cards", "annotation protocols", "quality audits"],
+  },
+  {
+    title: "Physical AI Testbeds",
+    icon: "bot",
+    body:
+      "Robotics groups and engineering labs create field environments for collecting perception, control, navigation, manipulation, and sensor-fusion data.",
+    outputs: ["robotics logs", "benchmark tasks", "field evaluation"],
+  },
+  {
+    title: "Safety & Evaluation Forum",
+    icon: "shield",
+    body:
+      "Research organizations support evaluation standards for medical AI, language models, autonomous systems, privacy-sensitive data, and field deployment.",
+    outputs: ["model cards", "risk reviews", "evaluation reports"],
+  },
+  {
+    title: "Fellowship Pathways",
+    icon: "users",
+    body:
+      "Sponsors and labs create onward pathways for fellows: mentorship, internships, technical residencies, publication support, and partner showcase access.",
+    outputs: ["mentor office hours", "residencies", "research showcase"],
+  },
+];
+
+export const dataCollectionPrograms: PartnerProgram[] = [
+  {
+    title: "African Scientific Dataset Program",
+    icon: "database",
+    body:
+      "Curated datasets for scientific reasoning, engineering education, domain terminology, lab workflows, agriculture, medicine, climate, and infrastructure intelligence.",
+    outputs: ["domain taxonomies", "source provenance", "benchmark splits"],
+  },
+  {
+    title: "Physical AI & Robotics Data Program",
+    icon: "bot",
+    body:
+      "Embodied data for rovers, drones, lab automation, field robots, and autonomous systems operating in African environments and real infrastructure contexts.",
+    outputs: ["sensor logs", "teleoperation traces", "robot evaluation tasks"],
+  },
+  {
+    title: "Agriculture Field Intelligence Program",
+    icon: "leaf",
+    body:
+      "Farm, soil, pest, crop-stress, weather, irrigation, and field imagery datasets collected with strong metadata and regional agronomic context.",
+    outputs: ["field imagery", "soil metadata", "crop health labels"],
+  },
+  {
+    title: "African Language Data Program",
+    icon: "language",
+    body:
+      "Speech, text, translation, terminology, and scientific education data for underrepresented African languages and bilingual technical workflows.",
+    outputs: ["speech corpora", "parallel text", "scientific terminology"],
+  },
+  {
+    title: "Health & Bioinformatics Data Program",
+    icon: "dna",
+    body:
+      "Privacy-aware datasets for diagnostics, molecular biology, epidemiology, clinical research support, and biomedical AI evaluation.",
+    outputs: ["de-identified records", "microscopy sets", "safety constraints"],
+  },
+  {
+    title: "Climate & Infrastructure Sensing Program",
+    icon: "climate",
+    body:
+      "Geospatial, weather, mobility, grid, flood-risk, and infrastructure datasets that help researchers model resilience and public systems.",
+    outputs: ["sensor feeds", "satellite features", "geospatial benchmarks"],
+  },
+];
+
+export const datasetTrustPrinciples = [
+  "clear consent and governance",
+  "documented provenance",
+  "representative African context",
+  "annotation quality controls",
+  "privacy and safety review",
+  "public dataset cards",
 ];
 
 export const faqs = [

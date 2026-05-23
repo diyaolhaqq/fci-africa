@@ -79,6 +79,8 @@ export default function ContactPage() {
                     <option>Partnership</option>
                     <option>Media</option>
                     <option>Research collaboration</option>
+                    <option>Data collection program</option>
+                    <option>Physical AI or robotics testbed</option>
                     <option>Compute sponsorship</option>
                   </select>
                 </label>
